@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #242424;
+  width: 100%;
+  height: 100vh; }
+  body .form-in {
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 30px;
+    transform: skew(-50deg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .txt-input {
+    height: 100%;
+    width: 350px;
+    border: solid white 1px;
+    background-color: rgba(241, 242, 243, 0.897);
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start; }
+    body .txt-input .input-field {
+      height: 60%;
+      width: 90%;
+      transform: skew(50deg);
+      margin-left: 10px;
+      background-color: rgba(255, 0, 0, 0);
+      border-style: none;
+      font-size: 15px;
+      color: #252525; }
+  body .btn {
+    height: 100%;
+    width: 250px;
+    background-color: #eb1111;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body .btn:hover {
+      cursor: pointer; }
+    body .btn .btn-in {
+      height: 100%;
+      width: 75%;
+      transform: skew(50deg);
+      background-color: rgba(255, 0, 0, 0);
+      border-style: none;
+      font-size: 15px;
+      text-decoration: inherit;
+      color: white;
+      font-weight: 500; }
+      body .btn .btn-in:hover {
+        cursor: pointer; }
+  body #box {
+    margin: 50px auto 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px; }
+    body #box img {
+      height: auto;
+      width: 100%;
+      margin: 0 auto; }
+    body #box h2 {
+      margin: 0 auto;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      margin: 0 auto;
+      left: 42.5%;
+      position: absolute;
+      font-family: Calibri; }
+
+@media screen and (max-width: 800px) {
+  body .form-in {
+    width: 80%;
+    transform: skew(0deg); }
+    body .form-in .txt-input {
+      width: 60%; }
+      body .form-in .txt-input .input-field {
+        transform: skew(0deg);
+        width: 90%; }
+    body .form-in .btn {
+      width: 40%; }
+      body .form-in .btn .btn-in {
+        transform: skew(0deg);
+        width: 100%; }
+  body #box {
+    grid-template-columns: repeat(2, 1fr); } }
